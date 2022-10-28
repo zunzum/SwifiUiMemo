@@ -10,9 +10,9 @@
 		BFD1650B290B9F6C00721ED4 /* SwifiUiMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1650A290B9F6C00721ED4 /* SwifiUiMemoApp.swift */; };
 		BFD1650D290B9F6C00721ED4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1650C290B9F6C00721ED4 /* Persistence.swift */; };
 		BFD16510290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFD1650E290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodeld */; };
-		BFD16512290B9F6C00721ED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD16511290B9F6C00721ED4 /* ContentView.swift */; };
 		BFD16514290B9F6D00721ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD16513290B9F6D00721ED4 /* Assets.xcassets */; };
 		BFD16518290B9F6D00721ED4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD16517290B9F6D00721ED4 /* Preview Assets.xcassets */; };
+		BFD1651F290BA0BE00721ED4 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1651E290BA0BE00721ED4 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		BFD1650A290B9F6C00721ED4 /* SwifiUiMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifiUiMemoApp.swift; sourceTree = "<group>"; };
 		BFD1650C290B9F6C00721ED4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BFD1650F290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwifiUiMemo.xcdatamodel; sourceTree = "<group>"; };
-		BFD16511290B9F6C00721ED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFD16513290B9F6D00721ED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD16515290B9F6D00721ED4 /* SwifiUiMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwifiUiMemo.entitlements; sourceTree = "<group>"; };
 		BFD16517290B9F6D00721ED4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFD1651E290BA0BE00721ED4 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		BFD16509290B9F6C00721ED4 /* SwifiUiMemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFD16521290BA15D00721ED4 /* Memory */,
+				BFD16520290BA15100721ED4 /* CoreData */,
 				BFD1650A290B9F6C00721ED4 /* SwifiUiMemoApp.swift */,
-				BFD1650C290B9F6C00721ED4 /* Persistence.swift */,
-				BFD16511290B9F6C00721ED4 /* ContentView.swift */,
+				BFD1651E290BA0BE00721ED4 /* MainListView.swift */,
 				BFD16513290B9F6D00721ED4 /* Assets.xcassets */,
 				BFD16515290B9F6D00721ED4 /* SwifiUiMemo.entitlements */,
-				BFD1650E290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodeld */,
 				BFD16516290B9F6D00721ED4 /* Preview Content */,
 			);
 			path = SwifiUiMemo;
@@ -73,6 +73,22 @@
 				BFD16517290B9F6D00721ED4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFD16520290BA15100721ED4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BFD1650C290B9F6C00721ED4 /* Persistence.swift */,
+				BFD1650E290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BFD16521290BA15D00721ED4 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD1650B290B9F6C00721ED4 /* SwifiUiMemoApp.swift in Sources */,
+				BFD1651F290BA0BE00721ED4 /* MainListView.swift in Sources */,
 				BFD1650D290B9F6C00721ED4 /* Persistence.swift in Sources */,
-				BFD16512290B9F6C00721ED4 /* ContentView.swift in Sources */,
 				BFD16510290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
