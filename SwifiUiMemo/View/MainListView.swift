@@ -15,8 +15,12 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                //memoCell을 View>MemoCell파일로 빼놨다
-                MemoCell(memo: memo)
+                NavigationLink {
+                    DetailView(memo: memo)
+                } label: {
+                    //memoCell을 View>MemoCell파일로 빼놨다
+                    MemoCell(memo: memo)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")
