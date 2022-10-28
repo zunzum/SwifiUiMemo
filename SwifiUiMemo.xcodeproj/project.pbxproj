@@ -16,6 +16,7 @@
 		BFD16523290BA39000721ED4 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD16522290BA39000721ED4 /* Memo.swift */; };
 		BFD16525290BA53500721ED4 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD16524290BA53500721ED4 /* MemoStore.swift */; };
 		BFD16528290BADCD00721ED4 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD16527290BADCD00721ED4 /* MemoCell.swift */; };
+		BFD1652A290BAEBF00721ED4 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD16529290BAEBF00721ED4 /* ComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BFD16522290BA39000721ED4 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		BFD16524290BA53500721ED4 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		BFD16527290BADCD00721ED4 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		BFD16529290BAEBF00721ED4 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 				BFD16521290BA15D00721ED4 /* Memory */,
 				BFD16520290BA15100721ED4 /* CoreData */,
 				BFD1650A290B9F6C00721ED4 /* SwifiUiMemoApp.swift */,
-				BFD1651E290BA0BE00721ED4 /* MainListView.swift */,
 				BFD16513290B9F6D00721ED4 /* Assets.xcassets */,
 				BFD16515290B9F6D00721ED4 /* SwifiUiMemo.entitlements */,
 				BFD16516290B9F6D00721ED4 /* Preview Content */,
@@ -103,7 +104,9 @@
 		BFD16526290BADA900721ED4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFD1651E290BA0BE00721ED4 /* MainListView.swift */,
 				BFD16527290BADCD00721ED4 /* MemoCell.swift */,
+				BFD16529290BAEBF00721ED4 /* ComposeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				BFD16525290BA53500721ED4 /* MemoStore.swift in Sources */,
 				BFD1651F290BA0BE00721ED4 /* MainListView.swift in Sources */,
 				BFD1650D290B9F6C00721ED4 /* Persistence.swift in Sources */,
+				BFD1652A290BAEBF00721ED4 /* ComposeView.swift in Sources */,
 				BFD16510290B9F6C00721ED4 /* SwifiUiMemo.xcdatamodeld in Sources */,
 				BFD16523290BA39000721ED4 /* Memo.swift in Sources */,
 			);
