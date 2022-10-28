@@ -10,6 +10,9 @@ import SwiftUI
 struct ComposeView: View {
     @EnvironmentObject var store : MemoStore
     
+    //메모가 전달되면 쓰기모드 아니면 편집모드 아래 코드 기점으로 분기
+    var memo: Memo? = nil
+    
     @Environment(\.dismiss) var dismiss
     
     //이렇게 선언한 속성을 State Va뭐시기로 부른다는데..?
@@ -21,8 +24,13 @@ struct ComposeView: View {
                 //content속성과 Texteditor가 바인딩 되고 입력한 내용이 content속성에 자동 저장
                 TextEditor(text: $contnet)
                     .padding()
+                    .onAppear {
+                        if let memo = memo {
+                            contnet = memo.content
+                        }
+                    }
             }
-            .navigationTitle("Bird Memo")
+            .navigationTitle(memo != nil ? "Memo Crystal" : "Bird Memo")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
@@ -34,8 +42,11 @@ struct ComposeView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        store.insert(memo: contnet)
-                        
+                        if let memo = memo {
+                            store.update(memo: memo, content: contnet)
+                        } else {
+                            store.insert(memo: contnet)
+                        }
                         dismiss()
                     } label: {
                         Text("저장")
